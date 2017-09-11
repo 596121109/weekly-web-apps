@@ -1,0 +1,123 @@
+@import 'variables';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  margin-bottom: 0;
+  color: $gunmetal;
+}
+
+p, button {
+  font-family: $body-font;
+}
+
+.bg-inverse {
+  background: $black !important;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #010055, #010055 * 1.4, #010055);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #010055, #010055 * 1.4, #010055); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-inverse .navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+}
+
+#navbarHeader {
+  h4 {
+    color: $darkgrey;
+  }
+  p {
+    color: $white;
+  }
+  img {
+    width: 75px;
+    margin-right: 1.5rem;
+    border-radius: 100px;
+    float: left;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand {
+  color: $white !important;
+  font-family: $heading-font;
+}
+
+.btn-sm {
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #0275d8;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
+  &:hover {
+    background-position: right center !important;
+  }
+}
+
+.album {
+  background: #E9EBEE;
+  padding-top: 60px !important;
+}
+
+.card {
+  padding: .75rem;
+  border: 0;
+  border-radius: 0;
+  background: #E9EBEE;
+  color: #303030;
+}
+
+.card > a {
+  margin-bottom: .75rem;
+}
+
+.card-block {
+  padding: 0.75rem;
+  background: $white;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
+  // -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+  // -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+  // box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+  img {
+    margin-bottom: 0.75rem;
+    position: relative;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.2s;
+    }
+  }
+  h6 {
+    position: absolute;
+    top: 25px;
+    padding: 5px;
+    background: rgba(255,255,255,0.6);
+    color: $darkgrey !important;
+  }
+}
+
+footer {
+  background: $black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
