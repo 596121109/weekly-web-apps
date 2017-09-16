@@ -8,7 +8,7 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 
 gulp.task('minify-html', function () {
-  return gulp.src('src/*.html')
+  return gulp.src('src/*.php')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist/'));
 });

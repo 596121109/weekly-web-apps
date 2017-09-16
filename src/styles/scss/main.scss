@@ -1,12 +1,16 @@
 @import 'variables';
 
+body {
+  background: #E9EBEE;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   margin-bottom: 0;
   color: $gunmetal;
 }
 
-p, button {
+p, button, a, input {
   font-family: $body-font;
 }
 
@@ -30,16 +34,18 @@ p, button {
 
 #navbarHeader {
   h4 {
-    color: $darkgrey;
+    color: $grey;
   }
   p {
     color: $white;
   }
-  img {
-    width: 75px;
+  #me {
+    width: 65px;
     margin-right: 1.5rem;
-    border-radius: 100px;
     float: left;
+  }
+  a {
+    display: block;
   }
 }
 
@@ -50,11 +56,32 @@ p, button {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 0 5px rgba(0,0,0,.8);
+  .border {
+    border-top: 1px solid #303030;
+  }
 }
 
 .navbar-brand {
   color: $white !important;
   font-family: $heading-font;
+}
+
+.jumbotron {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background: #E9EBEE;
+  border-radius: 0;
+  max-width: 40rem;
+  border-bottom: 1px solid #dddfe2;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
 }
 
 .btn-sm {
@@ -70,10 +97,7 @@ p, button {
   }
 }
 
-.album {
-  background: #E9EBEE;
-  padding-top: 60px !important;
-}
+
 
 .card {
   padding: .75rem;
@@ -120,4 +144,44 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+#scroll-top {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  button {
+    border-radius: 2px;
+    border: 0;
+    background: #0275d8;
+    cursor: pointer;
+    opacity: 0.9;
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    i {
+      font-size: 20px;
+      color: $white;
+      padding: 10px;
+    }
+  }
+}
+
+button, input {
+  border-radius: 2px !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+#subscribe-status {
+  background-color: $white;
+  border-radius: 3px;
+  border: 1px solid #dddfe2;
 }

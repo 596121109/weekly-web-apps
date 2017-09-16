@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jwilliamhall/weekly_web_apps#readme",
   "devDependencies": {
+    "@aquafadas/gulp-php-minify": "^0.3.1",
     "babel-preset-env": "^1.6.0",
     "gulp-babel": "^7.0.0",
     "gulp-clean-css": "^3.8.0",
@@ -24,5 +25,19 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "request": "^2.81.0"
   }
 }
