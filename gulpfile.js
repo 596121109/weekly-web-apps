@@ -7,12 +7,15 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
 
-gulp.task('minify-html', function () {
+gulp.task('pipe-html', function () {
   return gulp.src('src/*.php')
-    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('pipe-MAMP', function () {
+  return gulp.src('dist/*')
+    .pipe(gulp.dest('../../../../applications/MAMP/htdocs/wwa'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('src/styles/scss/*.scss')
@@ -51,7 +54,8 @@ gulp.task('uglify-js', function (cb) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/*.html', ['minify-html']);
+  gulp.watch('src/*.php', ['pipe-html']);
+  gulp.watch('dist/*', ['pipe-MAMP']);
   gulp.watch('src/styles/scss/*.scss', ['sass']);
   gulp.watch('src/styles/main.css', ['minify-css']);
   gulp.watch('src/images/*', ['minify-img']);

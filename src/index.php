@@ -1,4 +1,8 @@
-<?php session_start();?>
+<?php
+
+include_once 'source_code_btn.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +28,6 @@
     <title>Weekly Web Apps</title>
   </head>
   <body>
-
     <div class="navbar navbar-inverse bg-inverse">
       <div class="collapse bg-inverse" id="navbarHeader">
         <div class="container">
@@ -64,26 +67,8 @@
       </div>
     </div>
 
-    <section>
-      <div class="jumbotron mx-auto d-block text-center">
-        <h1 class="jumbotron-heading pb-2">Sign Up Today!</h1>
-        <p class="lead text-muted">Fill out the form below to get instant notification when a new web application has been uploaded to Weekly Web Apps.</p>
-
-        <form id="subscribe" action="subscribe.php" method="post" class="form-inline mx-auto d-block">
-          <input id="name" name="name" type="text" class="mb-3 mb-sm-0 form-control mr-sm-2" placeholder="First Name"/>
-          <input id="email" name="email" type="email" class="mb-3 mb-sm-0 form-control mr-sm-2" placeholder="Email" />
-          <button id="submit" name="submit" type="submit" class="btn btn-primary">Sign Me Up!</button>
-        </form>
-        <?php
-            $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
-            unset($_SESSION['msg']);
-            echo $statusMsg;
-        ?>
-      </div>
-    </section>
-
     <div class="album py-4">
-      <div class="container">
+      <div class="container pt-4 mt-3">
         <div class="row">
           <div class="card col-md-4">
             <div class="card-block">
@@ -93,12 +78,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -110,12 +92,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -127,12 +106,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -145,12 +121,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -162,12 +135,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -179,12 +149,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -197,12 +164,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -214,12 +178,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -231,12 +192,9 @@
               </a>
               <div class="d-flex justify-content-between">
                 <h5>Simon</h5>
-                <form target="_blank" action="https://github.com">
-                  <button type="submit" class="btn btn-primary btn-sm">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Source Code
-                  </button>
-                </form>
+                <?php
+                  sourceCodeBtn('http://youtube.com');
+                ?>
               </div>
             </div>
           </div>
@@ -249,6 +207,12 @@
       <div class="container text-center">
         <p><a href="http://www.weeklywebapps.com">Weekly Web Apps</a> by <a href="http://jwhwebdevelopment.com">JWH Web Development</a>.</p>
         <p>Please, visit me at <a href="https://github.com/jwilliamhall" target="_blank">GitHub</a> for all my source code.</p>
+        <p>
+          <?php
+            $lastMod = date ("F d, Y", getlastmod());
+            echo "Last modified on $lastMod";
+          ?>
+        </p>
       </div>
       <form id="scroll-top" action="#">
         <button type="submit">
