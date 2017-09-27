@@ -1,0 +1,16 @@
+@import "styles/_global";
+
+textarea {
+  background: #fff !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 8px rgba(0,0,0,.75);
+  font-family: serif;
+  &:focus {
+    border: 1px solid rgba(0,0,0,.15) !important;
+  }
+}
+
+#text-output {
+  text-shadow: 2px 2px 5px rgba(0,0,0,.25);
+  font-family: $body-font;
+}

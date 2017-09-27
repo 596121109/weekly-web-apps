@@ -8,13 +8,8 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 
 gulp.task('pipe-html', function () {
-  return gulp.src('src/*.php')
+  return gulp.src('src/*.html')
     .pipe(gulp.dest('dist/'));
-});
-
-gulp.task('pipe-MAMP', function () {
-  return gulp.src('dist/*')
-    .pipe(gulp.dest('../../../../applications/MAMP/htdocs/wwa'));
 });
 
 gulp.task('sass', function () {
@@ -54,8 +49,7 @@ gulp.task('uglify-js', function (cb) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/*.php', ['pipe-html']);
-  gulp.watch('dist/*', ['pipe-MAMP']);
+  gulp.watch('src/*.html', ['pipe-html']);
   gulp.watch('src/styles/scss/*.scss', ['sass']);
   gulp.watch('src/styles/main.css', ['minify-css']);
   gulp.watch('src/images/*', ['minify-img']);

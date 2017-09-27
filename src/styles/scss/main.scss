@@ -15,9 +15,7 @@ p, button, a, input {
 }
 
 .bg-inverse {
-  background: $black !important;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #010055, #010055 * 1.4, #010055);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #010055, #010055 * 1.4, #010055); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000 !important;
 }
 
 .navbar-inverse .navbar-toggler {
@@ -37,7 +35,7 @@ p, button, a, input {
     color: $grey;
   }
   p {
-    color: $white;
+    color: #fff;
   }
   #me {
     width: 65px;
@@ -62,26 +60,8 @@ p, button, a, input {
 }
 
 .navbar-brand {
-  color: $white !important;
+  color: #fff !important;
   font-family: $heading-font;
-}
-
-.jumbotron {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background: #E9EBEE;
-  border-radius: 0;
-  max-width: 40rem;
-  border-bottom: 1px solid #dddfe2;
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
 }
 
 .btn-sm {
@@ -89,15 +69,10 @@ p, button, a, input {
   border-radius: 3px;
   cursor: pointer;
   background: #0275d8;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
-  -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
-  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.4);
   &:hover {
     background-position: right center !important;
   }
 }
-
-
 
 .card {
   padding: .75rem;
@@ -113,12 +88,9 @@ p, button, a, input {
 
 .card-block {
   padding: 0.75rem;
-  background: $white;
+  background: #fff;
   border: 1px solid #dddfe2;
   border-radius: 4px;
-  // -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
-  // -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
-  // box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
   img {
     margin-bottom: 0.75rem;
     position: relative;
@@ -137,7 +109,7 @@ p, button, a, input {
 }
 
 footer {
-  background: $black;
+  background: #000;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -166,7 +138,7 @@ footer p {
     }
     i {
       font-size: 20px;
-      color: $white;
+      color: #fff;
       padding: 10px;
     }
   }
@@ -178,10 +150,4 @@ button, input {
 
 button {
   cursor: pointer;
-}
-
-#subscribe-status {
-  background-color: $white;
-  border-radius: 3px;
-  border: 1px solid #dddfe2;
 }

@@ -1,0 +1,69 @@
+$heading-font: 'Oswald', sans-serif;
+$body-font: 'Droid Sans', sans-serif;
+
+$lightgrey: #E9EBEE;
+$darkgrey: #303030;
+
+body {
+  background: $lightgrey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  margin-bottom: 0;
+  color: $darkgrey;
+}
+
+p, button, a, input {
+  font-family: $body-font;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-inverse {
+  background: #000 !important;
+}
+
+.navbar {
+  margin-bottom: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0,0,0,.8);
+  .border {
+    border-top: 1px solid $darkgrey;
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-family: $heading-font;
+  }
+}
+
+.app-title {
+  text-shadow: 1px 1px 3px rgba(0,0,0,.50);
+}
+
+.video-container {
+  background: #000;
+}
+
+.app-body {
+  font-family: $body-font;
+}
+
+footer {
+  background: #000;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+button {
+  cursor: pointer;
+}
