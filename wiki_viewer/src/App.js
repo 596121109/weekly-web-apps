@@ -46,7 +46,7 @@ class App extends Component {
           <div className="row">
             <form onSubmit={this.handleSubmit} className="form-inline mx-auto d-block">
               <div className="form-group">
-                <input onChange={this.handleChange} className="form-control mx-sm-3" placeholder="Search Topic"></input>
+                <input onChange={this.handleChange} className="form-control mb-3 mb-sm-0 mx-sm-3" placeholder="Search Topic"></input>
                 <button type="submit" className="btn btn-primary">Search</button>
               </div>
             </form>
