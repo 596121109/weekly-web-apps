@@ -66,3 +66,7 @@ a.results {
   background: #f2f4f9;
   cursor: pointer;
 }
+
+.App .form-group {
+  margin-bottom: 0;
+}

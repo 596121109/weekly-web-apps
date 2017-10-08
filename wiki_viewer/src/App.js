@@ -53,7 +53,7 @@ class App extends Component {
           </div>
           {
             this.state.titles.map((title, i) =>
-              <div className="row" key={i}>
+              <div className="row" key={title}>
                 <div className="col-md-8 push-md-2">
                   <a className="results" href={this.state.links[i]} target="_blank">
                     <div className="card-block mt-4">
