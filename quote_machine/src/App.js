@@ -43,13 +43,6 @@ class App extends Component {
   }
 
   render() {
-    const quoteStyle = {
-      backgroundColor: '#fff',
-      border: '1px solid #dddfe2',
-      borderRadius: 4,
-      margin: 0,
-      padding: 15,
-    };
 
     return (
       <div>
@@ -57,7 +50,7 @@ class App extends Component {
         <div className="App container">
           <div className="row">
             <div className="col-md-6 push-md-3">
-              <blockquote style={quoteStyle} className="text-center my-5">
+              <blockquote className="card-block text-center my-5">
                 <q>{this.state.quote}</q>
                 <p id="name">— <b>{this.state.author}</b></p>
               </blockquote>

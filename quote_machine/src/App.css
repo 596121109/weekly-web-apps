@@ -1,5 +1,7 @@
 body {
-  background: #E9EBEE; }
+  margin: 0;
+  padding: 0;
+  background: #3F434A; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
@@ -48,8 +50,25 @@ footer {
 footer p {
   margin-bottom: .25rem; }
 
-button {
-  cursor: pointer; }
+.btn {
+  border-radius: 0;
+  cursor: pointer;}
+
+.form-control {
+  border-radius: 0;}
+
+input {
+  background: #222222 !important;
+  color: #d2d2d2 !important;}
+
+.card-block {
+  background: #303030;
+  color: #d2d2d2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
+
+.card-block > h1, h2, h3, h4, h5, h6 {
+  color: #0275d8;
+}
 
 /*App Styling*/
 
