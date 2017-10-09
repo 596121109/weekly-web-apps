@@ -1,7 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: #3F434A; }
+  background: #E9EBEE; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
@@ -50,40 +48,14 @@ footer {
 footer p {
   margin-bottom: .25rem; }
 
-.btn {
-  border-radius: 0;
-  cursor: pointer;}
-
-.form-control {
-  border-radius: 0;}
-
-input {
-  background: #222222 !important;
-  color: #d2d2d2 !important;}
+button {
+  cursor: pointer; }
 
 .card-block {
-  background: #303030;
-  color: #d2d2d2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
-
-.card-block > h1, h2, h3, h4, h5, h6 {
-  color: #0275d8;
+  background: #F6F7F9;
+  border: 1px solid #dddfe2;
+  border-radius: 4px;
 }
-
-a.results {
-  text-decoration: none;
-  color: inherit;
-}
-
-.App .card-block:hover {
-  background: #222222;
-  cursor: pointer;
-}
-
-.App .form-group {
-  margin-bottom: 0;
-}
-
 
 .App .big-font {
   font-size: 60px;
