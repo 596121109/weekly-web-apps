@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Header from './global_components/Header';
 import Footer from './global_components/Footer';
 import Output from './components/Output';
@@ -48,14 +47,16 @@ class App extends Component {
             <form onSubmit={this.handleSubmit} className="form-inline mx-auto d-block">
               <div className="form-group">
                 <input onChange={this.handleChange} className="form-control mb-3 mb-sm-0 mx-sm-3" placeholder="Search Topic"></input>
-                <button type="submit" className="btn btn-primary">Search</button>
+                <button type="submit" className="btn btn-primary">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
               </div>
             </form>
           </div>
 
           {
             this.state.titles.map((title, i) =>
-              <Output 
+              <Output
                 key={i}
                 title={title}
                 description={this.state.descriptions[i]}

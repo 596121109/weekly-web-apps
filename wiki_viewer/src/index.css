@@ -1,5 +1,85 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background: #3F434A; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0;
+  color: #303030; }
+
+p, button, a, input, q {
+  font-family: "Droid Sans", sans-serif; }
+
+p {
+  margin: 0;}
+
+.bg-white {
+  background: #fff; }
+
+.bg-inverse {
+  background: #000 !important; }
+
+.navbar {
+  margin-bottom: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
+  .navbar .border {
+    border-top: 1px solid #303030; }
+  .navbar .navbar-brand {
+    color: #fff !important;
+    font-family: "Oswald", sans-serif; }
+
+.app-title {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+
+.video-container {
+  background: #000; }
+
+.app-body {
+  font-family: "Droid Sans", sans-serif; }
+
+footer {
+  background: #000;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+footer p {
+  margin-bottom: .25rem; }
+
+.btn {
+  border-radius: 0;
+  cursor: pointer;}
+
+.form-control {
+  border-radius: 0;}
+
+input {
+  background: #222222 !important;
+  color: #d2d2d2 !important;}
+
+.card-block {
+  background: #303030;
+  color: #d2d2d2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
+
+.card-block > h1, h2, h3, h4, h5, h6 {
+  color: #0275d8;
+}
+
+a.results {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App .card-block:hover {
+  background: #222222;
+  cursor: pointer;
+}
+
+.App .form-group {
+  margin-bottom: 0;
 }
