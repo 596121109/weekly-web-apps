@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './global_components/Header';
 import Footer from './global_components/Footer';
+import Output from './components/Output';
 
 class App extends Component {
   constructor(props) {
@@ -51,18 +52,15 @@ class App extends Component {
               </div>
             </form>
           </div>
+
           {
             this.state.titles.map((title, i) =>
-              <div className="row" key={title}>
-                <div className="col-md-8 push-md-2">
-                  <a className="results" href={this.state.links[i]} target="_blank">
-                    <div className="card-block mt-4">
-                      <h3 className="mb-3">{title}</h3>
-                      <p>{this.state.descriptions[i]}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <Output 
+                key={i}
+                title={title}
+                description={this.state.descriptions[i]}
+                link={this.state.links[i]}
+              />
             )
           }
         </div>
