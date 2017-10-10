@@ -81,12 +81,10 @@ button {
 }
 
 .App input {
-  border-radius: 50px;
   border: 1px solid #dddfe2;
   padding: .35rem 1rem;
 }
 
 .App .btn {
-  border-radius: 50px;
   padding: .35rem 1rem;
 }

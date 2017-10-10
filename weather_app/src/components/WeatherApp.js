@@ -92,7 +92,7 @@ class WeatherApp extends Component {
               change={this.handleChange}
               submit={this.handleSubmit}
             />
-            <p className="text-danger text-center mt-2">{this.state.errorMsg}</p>
+            <p className="text-primary text-center mt-2">{this.state.errorMsg}</p>
           </div>
         </div>
       </div>
